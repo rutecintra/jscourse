@@ -67,23 +67,37 @@
 
 // Aula 6
 
-var idade = "65";
-var teste = idade == 60;
+// var idade = "65";
+// var teste = idade == 60;
 
-console.log(teste); //false
+// console.log(teste); //false
 
-var teste = idade === 65;
+// var teste = idade === 65;
 
-console.log(teste); //false
-//igual 3 vezes verifica valor e TIPO
+// console.log(teste); //false
+// //igual 3 vezes verifica valor e TIPO
 
 
-var teste = idade != 65;
+// var teste = idade != 65;
 
-console.log(teste); //false
+// console.log(teste); //false
 
-var vtype = true;
+// var vtype = true;
 
-//tipo de variável
-console.log(typeof vtype == "boolean"); //true
+// //tipo de variável
+// console.log(typeof vtype == "boolean"); //true
+
+// Aula 7
+
+var undf;
+
+console.log(undf); //undefined
+
+var temperatura = 35;
+temperatura = null;
+console.log(temperatura); //null
+
+//null é typeof object
+//se comparar null == undefined retorna true, mas
+//se comparar null === undefined retorna false
 
