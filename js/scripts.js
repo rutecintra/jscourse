@@ -165,45 +165,64 @@
 
 //Aula 13
 
-var funcionario = {
-    'nome': 'Pedro Souza Gomes',
-    'ano_nasc': 1972,
-    'cpf': '111.111.111.11',
-    'cargo': 'Analista de Sistemas'
+// var funcionario = {
+//     'nome': 'Pedro Souza Gomes',
+//     'ano_nasc': 1972,
+//     'cpf': '111.111.111.11',
+//     'cargo': 'Analista de Sistemas'
+// };
+
+// //duas formas de acessar elemento
+// console.log(funcionario['nome']);
+// console.log(funcionario.ano_nasc);
+
+// funcionario.cargo = "Gerente de TI";
+// funcionario.cnh = "456789";
+
+// var cursos = [
+//     {
+//         'titulo': 'Aprenda programação em Python 3 com facilidade do zero',
+//         'avaliacoes': 680,
+//         'alunos': 2300,
+//         'categorias': ['programacao', 'tecnologia']
+//     },
+
+//     {
+//         'titulo': 'Aprenda PHP e faça sites dinâmicos',
+//         'avaliacoes': 180,
+//         'alunos': 350,
+//         'categorias': ['desenvolvimento web', 'programacao']
+//     },
+
+//     {
+//         'titulo': 'Excel do Zero ao Avançado',
+//         'avaliacoes': 420,
+//         'alunos': 1800,
+//         'categorias': ['produtividade', 'gestão']
+//     }
+    
+// ];
+
+// console.log(cursos[1].categorias[0]);
+
+// cursos[2].categorias[1] = 'administração de empresas';
+// console.log(cursos[2].categorias[1]);
+
+//Aula 14
+
+var aluno = {
+    'nome': 'Maria',
+    'sobrenome': 'Pereira',
+    'ano_nasc': 1992,
+    'nome_completo': function() {
+        var nomeCompleto = this.nome + ' ' + this.sobrenome;
+        return nomeCompleto;
+    },
+    'idade': function() {
+        var idade = new Date().getFullYear() - this.ano_nasc;
+        return idade;
+    }
 };
 
-//duas formas de acessar elemento
-console.log(funcionario['nome']);
-console.log(funcionario.ano_nasc);
-
-funcionario.cargo = "Gerente de TI";
-funcionario.cnh = "456789";
-
-var cursos = [
-    {
-        'titulo': 'Aprenda programação em Python 3 com facilidade do zero',
-        'avaliacoes': 680,
-        'alunos': 2300,
-        'categorias': ['programacao', 'tecnologia']
-    },
-
-    {
-        'titulo': 'Aprenda PHP e faça sites dinâmicos',
-        'avaliacoes': 180,
-        'alunos': 350,
-        'categorias': ['desenvolvimento web', 'programacao']
-    },
-
-    {
-        'titulo': 'Excel do Zero ao Avançado',
-        'avaliacoes': 420,
-        'alunos': 1800,
-        'categorias': ['produtividade', 'gestão']
-    }
-    
-];
-
-console.log(cursos[1].categorias[0]);
-
-cursos[2].categorias[1] = 'administração de empresas';
-console.log(cursos[2].categorias[1]);
+console.log(aluno.nome_completo());
+console.log(aluno.idade());
