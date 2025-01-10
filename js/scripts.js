@@ -115,37 +115,50 @@
 
 //Aula 11
 
-function soma_numeros()
-{
-    var x = 5;
-    var y = 2;
-    var soma = x + y;
-    console.log(soma);
-}
+// function soma_numeros()
+// {
+//     var x = 5;
+//     var y = 2;
+//     var soma = x + y;
+//     console.log(soma);
+// }
 
-soma_numeros();
+// soma_numeros();
 
-function soma_args(num1, num2)
-{
-    var soma = num1 + num2;
-    return soma;
-}
+// function soma_args(num1, num2)
+// {
+//     var soma = num1 + num2;
+//     return soma;
+// }
 
-// console.log('Resultados da soma: ' + soma_args(10, 25));
+// // console.log('Resultados da soma: ' + soma_args(10, 25));
 
-var soma_f = soma_args(10, 25);
+// var soma_f = soma_args(10, 25);
 
-function valor_imc(peso,altura) {
-    var imc = peso / (altura * altura);
-    return imc;
-}
+// function valor_imc(peso,altura) {
+//     var imc = peso / (altura * altura);
+//     return imc;
+// }
 
-var meu_peso = parseFloat(document.getElementById("peso").innerHTML);
-console.log(typeof meu_peso);
+// var meu_peso = parseFloat(document.getElementById("peso").innerHTML);
+// console.log(typeof meu_peso);
 
-var minha_altura = parseFloat(document.getElementById("altura").innerHTML);
+// var minha_altura = parseFloat(document.getElementById("altura").innerHTML);
 
-var meu_imc = valor_imc(meu_peso,minha_altura);
+// var meu_imc = valor_imc(meu_peso,minha_altura);
 
-document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
+// document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
 
+//Aula 12
+
+var alunos = [ "João" , "Maria", "José" ];
+var num_primos = [ 2, 3, 5, 7, 11, 13 ];
+
+var grupos = [ 
+    [ "João" , "Maria" ],
+    [ "Pedro" , "Joana", "André", "Júlio" ],
+    [ "Carolina" , "Helena", "Marcelo" ]
+];
+
+console.log(grupos.length);
+console.log(grupos[0][1]);
