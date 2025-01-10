@@ -89,15 +89,27 @@
 
 // Aula 7
 
-var undf;
+// var undf;
 
-console.log(undf); //undefined
+// console.log(undf); //undefined
 
-var temperatura = 35;
-temperatura = null;
-console.log(temperatura); //null
+// var temperatura = 35;
+// temperatura = null;
+// console.log(temperatura); //null
 
 //null é typeof object
 //se comparar null == undefined retorna true, mas
 //se comparar null === undefined retorna false
+
+// Aula 10
+
+var conteudo_caixa = document.getElementById("caixa_azul").innerHTML;
+
+// console.log(conteudo_caixa);
+
+// document.getElementById("caixa_amarela").innerHTML = conteudo_caixa;
+
+document.getElementById("caixa_azul").innerHTML = '<h1>' + conteudo_caixa + '</h1>';
+
+document.getElementById("caixa_amarela").innerHTML = '<h1>' + 'Caixa amarela' + '</h1>';
 
