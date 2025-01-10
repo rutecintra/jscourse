@@ -103,13 +103,49 @@
 
 // Aula 10
 
-var conteudo_caixa = document.getElementById("caixa_azul").innerHTML;
+// var conteudo_caixa = document.getElementById("caixa_azul").innerHTML;
 
 // console.log(conteudo_caixa);
 
 // document.getElementById("caixa_amarela").innerHTML = conteudo_caixa;
 
-document.getElementById("caixa_azul").innerHTML = '<h1>' + conteudo_caixa + '</h1>';
+// document.getElementById("caixa_azul").innerHTML = '<h1>' + conteudo_caixa + '</h1>';
 
-document.getElementById("caixa_amarela").innerHTML = '<h1>' + 'Caixa amarela' + '</h1>';
+// document.getElementById("caixa_amarela").innerHTML = '<h1>' + 'Caixa amarela' + '</h1>';
+
+//Aula 11
+
+function soma_numeros()
+{
+    var x = 5;
+    var y = 2;
+    var soma = x + y;
+    console.log(soma);
+}
+
+soma_numeros();
+
+function soma_args(num1, num2)
+{
+    var soma = num1 + num2;
+    return soma;
+}
+
+// console.log('Resultados da soma: ' + soma_args(10, 25));
+
+var soma_f = soma_args(10, 25);
+
+function valor_imc(peso,altura) {
+    var imc = peso / (altura * altura);
+    return imc;
+}
+
+var meu_peso = parseFloat(document.getElementById("peso").innerHTML);
+console.log(typeof meu_peso);
+
+var minha_altura = parseFloat(document.getElementById("altura").innerHTML);
+
+var meu_imc = valor_imc(meu_peso,minha_altura);
+
+document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
 
