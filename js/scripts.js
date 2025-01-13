@@ -251,11 +251,22 @@
 
 //Aula 17
 
-var botao = document.getElementById("botao_cor");
+// var botao = document.getElementById("botao_cor");
 
-botao.onclick = function() {
-    // document.getElementById("botao_cor").style['background-color'] = "purple";
-    // this.style['background-color'] = "purple";
-    botao.style['background-color'] = "purple";
-    botao.style.transform = "translateX(100px)";
-}
+// botao.onclick = function() {
+//     // document.getElementById("botao_cor").style['background-color'] = "purple";
+//     // this.style['background-color'] = "purple";
+//     botao.style['background-color'] = "purple";
+//     botao.style.transform = "translateX(100px)";
+// }
+
+//Aula 18
+
+// var exemplo = document.getElementsByClassName("exemplo");
+
+// exemplo[0].innerHTML = "teste1";
+// console.log(exemplo);
+
+var exemplo = document.getElementsByTagName("p");
+
+console.log(exemplo);
