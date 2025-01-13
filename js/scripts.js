@@ -210,19 +210,41 @@
 
 //Aula 14
 
-var aluno = {
-    'nome': 'Maria',
-    'sobrenome': 'Pereira',
-    'ano_nasc': 1992,
-    'nome_completo': function() {
-        var nomeCompleto = this.nome + ' ' + this.sobrenome;
-        return nomeCompleto;
-    },
-    'idade': function() {
-        var idade = new Date().getFullYear() - this.ano_nasc;
-        return idade;
-    }
-};
+// var aluno = {
+//     'nome': 'Maria',
+//     'sobrenome': 'Pereira',
+//     'ano_nasc': 1992,
+//     'nome_completo': function() {
+//         var nomeCompleto = this.nome + ' ' + this.sobrenome;
+//         return nomeCompleto;
+//     },
+//     'idade': function() {
+//         var idade = new Date().getFullYear() - this.ano_nasc;
+//         return idade;
+//     }
+// };
 
-console.log(aluno.nome_completo());
-console.log(aluno.idade());
+// console.log(aluno.nome_completo());
+// console.log(aluno.idade());
+
+//Aula 16
+
+// document.getElementById("click-me").onclick = function () {
+//     alert("Você clicou no botão");
+// }
+
+// document.getElementById("hover-me").onmouseover = function () {
+//     alert("Você passou com o cursor no botão");
+// }
+
+// document.getElementById("leave-me").onmouseout = function () {
+//     alert("Você saiu com o cursor no botão");
+// }
+
+// document.onkeydown = function(event) {
+//     alert('Você apertou a tecla: ' + event.keyCode);
+// };
+
+function button_clicked() {
+    alert("Você clicou no botão");
+}
