@@ -245,6 +245,17 @@
 //     alert('Você apertou a tecla: ' + event.keyCode);
 // };
 
-function button_clicked() {
-    alert("Você clicou no botão");
+// function button_clicked() {
+//     alert("Você clicou no botão");
+// }
+
+//Aula 17
+
+var botao = document.getElementById("botao_cor");
+
+botao.onclick = function() {
+    // document.getElementById("botao_cor").style['background-color'] = "purple";
+    // this.style['background-color'] = "purple";
+    botao.style['background-color'] = "purple";
+    botao.style.transform = "translateX(100px)";
 }
