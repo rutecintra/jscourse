@@ -570,15 +570,78 @@
 //     console.log('Tentativa: ' + i);
 // }
 
-var num = 0;
+// var num = 0;
 
-while (num < 20) {
+// while (num < 20) {
 
-    num++;
+//     num++;
 
-    if (num % 2 == 0) {
-        continue;
-    }
+//     if (num % 2 == 0) {
+//         continue;
+//     }
 
-    console.log(num);
+//     console.log(num);
+// }
+
+//Aula 30
+
+//select box
+
+// document.getElementById("mostrar_opcao").onclick = function() {
+
+//     // var campo_select = document.getElementById("options");
+//     // var indice_selecionado = campo_select.options.selectedIndex;
+//     // var valor_selecionado = campo_select.options[indice_selecionado].innerHTML;
+
+//     // document.getElementById("opcao_selecionada").innerHTML = valor_selecionado;
+
+//     var valor_selecionado = document.getElementById("options").value;
+//     document.getElementById("opcao_selecionada").innerHTML = valor_selecionado;
+// }
+
+//radio buttons
+
+// document.getElementById("mostrar_radio").onclick = function () {
+
+//     var radio = document.getElementsByName("genero");
+    
+//     var radio_selected;
+     
+//     for (var a = 0;  a < radio.length; a++) {
+//         if (radio[a].checked) {
+//             radio_selected = radio[a].value;
+//             break;
+//         }
+//     }
+    
+//     document.getElementById("radio_selecionado").innerHTML = radio_selected;
+
+// };
+
+//CheckBoxes
+
+// document.getElementById("mostrar_check").onclick = function () {
+
+
+//     var check = document.getElementsByName("interesse");
+
+//     document.getElementById("check_selecionado").innerHTML = "";
+
+//     for (var b = 0;  b < check.length; b++) {
+//         if (check[b].checked) {
+//             document.getElementById("check_selecionado").innerHTML += '<li>' + check[b].value + '</li>';
+//         }
+//     }
+
+
+// };
+
+//date
+
+document.getElementById("mostrar_data").onclick = function() {
+
+    var date_select = document.getElementById("data_evento").value;
+    var data_completa = new Date(date_select);
+
+    document.getElementById("data_selecionada").innerHTML = data_completa;
 }
