@@ -273,31 +273,47 @@
 
 //Aula 19
 
-for (var a = 0; a < 5; a++) {
-    console.log(a);
+// for (var a = 0; a < 5; a++) {
+//     console.log(a);
+// }
+
+// var alunos = ['Pedro', 'Maria', 'José', 'João', 'Carlos'];
+
+// for  (var b = 0; b < alunos.length; b++) {
+//     console.log(alunos[b]);
+// }
+
+// var carro = {
+//     'Ano': 2018,
+//     'Modelo': 'Fox',
+//     'Cilindradas': '1.8',
+//     'Combustível': 'Gasolina'
+
+// }
+
+// for (var prop in carro) {
+//     console.log(prop + ': ' + carro[prop])
+// }
+
+// var elementos = document.getElementsByTagName("p");
+
+// for (var c = 0; c < elementos.length; c++) {
+//     elementos[c].style.color = "orange";
+//     elementos[c].style['font-weight'] = "bold";
+// }
+
+// Aula 19
+
+var count = 0;
+
+while (count < 5) {
+    console.log(count);
+    count++;
 }
 
-var alunos = ['Pedro', 'Maria', 'José', 'João', 'Carlos'];
+var count2 = 10;
 
-for  (var b = 0; b < alunos.length; b++) {
-    console.log(alunos[b]);
-}
-
-var carro = {
-    'Ano': 2018,
-    'Modelo': 'Fox',
-    'Cilindradas': '1.8',
-    'Combustível': 'Gasolina'
-
-}
-
-for (var prop in carro) {
-    console.log(prop + ': ' + carro[prop])
-}
-
-var elementos = document.getElementsByTagName("p");
-
-for (var c = 0; c < elementos.length; c++) {
-    elementos[c].style.color = "orange";
-    elementos[c].style['font-weight'] = "bold";
-}
+do {
+    console.log(count2);
+    count2++;
+} while (count2 < 5);
