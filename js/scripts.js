@@ -495,25 +495,51 @@
 
 // }, 1000);
 
-window.setInterval(function() {
-    
-    var hora_atual = format_time(new Date().getHours()) + ':' + format_time(new Date().getMinutes()) + ':' + format_time(new Date().getSeconds());
+// window.setInterval(function() {
 
-    function format_time (time) {
+//     var hora_atual = format_time(new Date().getHours()) + ':' + format_time(new Date().getMinutes()) + ':' + format_time(new Date().getSeconds());
 
-        if (time >= 0 && time <=9) {
+//     function format_time (time) {
 
-            var formatted_time = time.toString();
-            formatted_time = '0' + formatted_time;
+//         if (time >= 0 && time <=9) {
 
-        } else {
+//             var formatted_time = time.toString();
+//             formatted_time = '0' + formatted_time;
 
-            var formatted_time = time.toString();
-        }
+//         } else {
 
-        return formatted_time;
+//             var formatted_time = time.toString();
+//         }
+
+//         return formatted_time;
+//     }
+
+//     document.getElementById("relogio").innerHTML = hora_atual;
+
+// }, 1000)
+
+//Aula 28
+
+function valor_pedagio (categoria) {
+
+    switch(categoria) {
+
+        case '1':
+            return 11.22;
+            break;
+        case '2':
+            return 22.45;
+            break;
+        case '3':
+            return 16.88;
+            break;
+        case '4':
+            return 33.65;
+            break;
+        default:
+            return 'Categoria não encontrada';
     }
+}
 
-    document.getElementById("relogio").innerHTML = hora_atual;
-
-}, 1000)
+var categoria_veiculo = '15';
+console.log(valor_pedagio(categoria_veiculo));
