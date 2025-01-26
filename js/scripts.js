@@ -417,30 +417,51 @@
 
 // window.localStorage.setItem("nome", "João");
 
-document.getElementById("enviar-nome").onclick = function() {
-    var nome = document.getElementById("nome-usuario").value;
-    localStorage.setItem("nome", nome);
+// document.getElementById("enviar-nome").onclick = function() {
+//     var nome = document.getElementById("nome-usuario").value;
+//     localStorage.setItem("nome", nome);
 
-    document.getElementById("name-field").style.display = "none";
+//     document.getElementById("name-field").style.display = "none";
     
-    document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
-    document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
-    document.getElementById("welcome-area").style.display = "initial";
-}
+//     document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
+//     document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
+//     document.getElementById("welcome-area").style.display = "initial";
+// }
 
-if (localStorage.nome) {
+// if (localStorage.nome) {
 
-    document.getElementById("name-field").style.display = "none";
+//     document.getElementById("name-field").style.display = "none";
     
-    document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
-    document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
-    document.getElementById("welcome-area").style.display = "initial";
-}
+//     document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
+//     document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
+//     document.getElementById("welcome-area").style.display = "initial";
+// }
 
-document.getElementById("not-me").onclick = function() {
+// document.getElementById("not-me").onclick = function() {
 
-    localStorage.removeItem("nome");
+//     localStorage.removeItem("nome");
 
-    document.getElementById("welcome-area").style.display = "none";
-    document.getElementById("name-field").style.display = "initial";
-}
+//     document.getElementById("welcome-area").style.display = "none";
+//     document.getElementById("name-field").style.display = "initial";
+// }
+
+//Aula 26
+
+// var data_hoje = new Date(2016,0,10);
+// var data_hoje = new Date("2020-03-18");
+// var data_hoje = new Date();
+
+// console.log(data_hoje.getDate());
+
+// var data_nascimento = "1997-07-19";
+
+// var ano_nasc = new Date(data_nascimento).getFullYear();
+// var ano_atual = new Date().getFullYear();
+// console.log(ano_atual - ano_nasc);
+
+var envio = new Date("2018-03-20").getTime();
+var entrega = new Date("2018-04-06").getTime();
+
+var total = (entrega - envio)/86400000;
+
+document.getElementById("dias_entrega").innerHTML = total;
