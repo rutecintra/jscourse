@@ -304,16 +304,45 @@
 
 // Aula 19
 
-var count = 0;
+// var count = 0;
 
-while (count < 5) {
-    console.log(count);
-    count++;
+// while (count < 5) {
+//     console.log(count);
+//     count++;
+// }
+
+// var count2 = 10;
+
+// do {
+//     console.log(count2);
+//     count2++;
+// } while (count2 < 5);
+
+// Aula 20
+
+var idade = 18;
+
+if (idade < 18) {
+    console.log("Menor de idade");
+} else if (idade == 18) {
+    console.log("Tem 18 anos");
+} else {
+    console.log("Maior de idade");
 }
 
-var count2 = 10;
+var nota = 8;
+var faltas = 4;
 
-do {
-    console.log(count2);
-    count2++;
-} while (count2 < 5);
+if (nota >= 7 && faltas <= 4) {
+    console.log("Passou");
+} else {
+    console.log("Rodou");
+}
+
+var nome = "Ivan";
+
+if (nome) {
+    console.log("Nome: " + nome);
+} else {
+    console.log("Nome não informado")
+}
