@@ -22,9 +22,6 @@ var selected_color = "#2A2D34";
 
 var about_tags = document.getElementsByClassName("single-tab");
 
-console.log(about_tags);
-console.log(aboutUs)
-
 for (var i = 0; i < about_tags.length; i++) {
 
   about_tags[i].onclick = function() {  
@@ -61,6 +58,24 @@ var our_services = [
   }
   
 ];
+
+var servico_atual = 0;
+
+document.getElementById("service-previous").onclick = function() {
+
+  servico_atual = servico_atual == 0 ? our_services.length - 1 : servico_atual - 1;
+
+  document.getElementById("service-title").innerHTML = our_services[servico_atual].title;
+  document.getElementById("service-text").innerHTML = our_services[servico_atual].text;
+}
+
+document.getElementById("service-next").onclick = function() {
+
+  servico_atual = servico_atual == our_services.length - 1 ? 0 : servico_atual + 1;
+
+  document.getElementById("service-title").innerHTML = our_services[servico_atual].title;
+  document.getElementById("service-text").innerHTML = our_services[servico_atual].text;
+}
 
 
 // Data Footer
