@@ -459,9 +459,61 @@
 // var ano_atual = new Date().getFullYear();
 // console.log(ano_atual - ano_nasc);
 
-var envio = new Date("2018-03-20").getTime();
-var entrega = new Date("2018-04-06").getTime();
+// var envio = new Date("2018-03-20").getTime();
+// var entrega = new Date("2018-04-06").getTime();
 
-var total = (entrega - envio)/86400000;
+// var total = (entrega - envio)/86400000;
 
-document.getElementById("dias_entrega").innerHTML = total;
+// document.getElementById("dias_entrega").innerHTML = total;
+
+//Aula 27
+
+// console.log('Mensagem 1');
+
+// window.setTimeout(function(){
+//     console.log('Mensagem 2');
+// },3000);
+
+// document.getElementById("mostrar-loader").onclick = function() {
+
+//     document.getElementById("spinner-loader").style.display = "initial";
+
+//     window.setTimeout(function() {
+//         document.getElementById("spinner-loader").style.display = "none";
+//     }, 5000);
+// }
+
+// var count = 0;
+
+// var interval = window.setInterval(function() {
+//     console.log(count);
+//     count++;
+
+//     if (count >= 10) {
+//         window.clearInterval(interval);
+//     }
+
+// }, 1000);
+
+window.setInterval(function() {
+    
+    var hora_atual = format_time(new Date().getHours()) + ':' + format_time(new Date().getMinutes()) + ':' + format_time(new Date().getSeconds());
+
+    function format_time (time) {
+
+        if (time >= 0 && time <=9) {
+
+            var formatted_time = time.toString();
+            formatted_time = '0' + formatted_time;
+
+        } else {
+
+            var formatted_time = time.toString();
+        }
+
+        return formatted_time;
+    }
+
+    document.getElementById("relogio").innerHTML = hora_atual;
+
+}, 1000)
