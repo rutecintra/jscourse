@@ -402,3 +402,13 @@
 //         list_element.innerHTML += '<li>' + lista_filhos[b] + ' - Filho de ' + funcionarios[a].nome;
 //     }
 // }
+
+
+//Aula 24
+
+window.onmousemove = function(e) {
+
+    if (e.pageY < 5) {
+        alert("Não perca os descontos exclusivos na seção de promoções!");
+    }
+};
