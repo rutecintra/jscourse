@@ -320,29 +320,85 @@
 
 // Aula 20
 
-var idade = 18;
+// var idade = 18;
 
-if (idade < 18) {
-    console.log("Menor de idade");
-} else if (idade == 18) {
-    console.log("Tem 18 anos");
-} else {
-    console.log("Maior de idade");
-}
+// if (idade < 18) {
+//     console.log("Menor de idade");
+// } else if (idade == 18) {
+//     console.log("Tem 18 anos");
+// } else {
+//     console.log("Maior de idade");
+// }
 
-var nota = 8;
-var faltas = 4;
+// var nota = 8;
+// var faltas = 4;
 
-if (nota >= 7 && faltas <= 4) {
-    console.log("Passou");
-} else {
-    console.log("Rodou");
-}
+// if (nota >= 7 && faltas <= 4) {
+//     console.log("Passou");
+// } else {
+//     console.log("Rodou");
+// }
 
-var nome = "Ivan";
+// var nome = "Ivan";
 
-if (nome) {
-    console.log("Nome: " + nome);
-} else {
-    console.log("Nome não informado")
+// if (nome) {
+//     console.log("Nome: " + nome);
+// } else {
+//     console.log("Nome não informado")
+// }
+
+// Aula 22
+
+// var socio = true;
+// var idade = 25;
+
+// if (socio || idade >= 65) {
+//     console.log("Ingresso gratuito");
+// } else {
+//     if(idade < 18) {
+//         console.log("Preço a pagar: R$6.00");
+//     } else {
+//         console.log("Preço a pagar: R$12.00");
+//     }
+// }
+
+var funcionarios = [
+        
+    {
+        'nome': 'Carlos Henrique da Silva',
+        'idade': 45,
+        'filhos': ['Mariana Alves da Silva', 'Fernanda Alves da Silva']
+        
+    },
+
+    {
+        'nome': 'Maria Helena Pereira',
+        'idade': 32,
+        'filhos': undefined
+        
+    },
+
+    {
+        'nome': 'José Feliciano Maia',
+        'idade': 39,
+        'filhos': ['Felipe Ferreira Maia', 'Fábio Ferreira Maia', 'João Ferreira Maia']
+        
+    }
+
+];
+
+var list_element = document.getElementById("filhos");
+list_element.innerHTML = "";
+
+for (var a = 0; a < funcionarios.length; a++) {
+
+    if ( ! funcionarios[a].filhos) {
+        continue;
+    }
+
+    var lista_filhos = funcionarios[a].filhos;
+
+    for (var b = 0; b<lista_filhos.length; b++) {
+        list_element.innerHTML += '<li>' + lista_filhos[b] + ' - Filho de ' + funcionarios[a].nome;
+    }
 }
