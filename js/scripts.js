@@ -406,9 +406,41 @@
 
 //Aula 24
 
-window.onmousemove = function(e) {
+// window.onmousemove = function(e) {
 
-    if (e.pageY < 5) {
-        alert("Não perca os descontos exclusivos na seção de promoções!");
-    }
-};
+//     if (e.pageY < 5) {
+//         alert("Não perca os descontos exclusivos na seção de promoções!");
+//     }
+// };
+
+//Aula 25
+
+// window.localStorage.setItem("nome", "João");
+
+document.getElementById("enviar-nome").onclick = function() {
+    var nome = document.getElementById("nome-usuario").value;
+    localStorage.setItem("nome", nome);
+
+    document.getElementById("name-field").style.display = "none";
+    
+    document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
+    document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
+    document.getElementById("welcome-area").style.display = "initial";
+}
+
+if (localStorage.nome) {
+
+    document.getElementById("name-field").style.display = "none";
+    
+    document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
+    document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
+    document.getElementById("welcome-area").style.display = "initial";
+}
+
+document.getElementById("not-me").onclick = function() {
+
+    localStorage.removeItem("nome");
+
+    document.getElementById("welcome-area").style.display = "none";
+    document.getElementById("name-field").style.display = "initial";
+}
