@@ -520,26 +520,65 @@
 
 //Aula 28
 
-function valor_pedagio (categoria) {
+// function valor_pedagio (categoria) {
 
-    switch(categoria) {
+//     switch(categoria) {
 
-        case '1':
-            return 11.22;
-            break;
-        case '2':
-            return 22.45;
-            break;
-        case '3':
-            return 16.88;
-            break;
-        case '4':
-            return 33.65;
-            break;
-        default:
-            return 'Categoria não encontrada';
+//         case '1':
+//             return 11.22;
+//             break;
+//         case '2':
+//             return 22.45;
+//             break;
+//         case '3':
+//             return 16.88;
+//             break;
+//         case '4':
+//             return 33.65;
+//             break;
+//         default:
+//             return 'Categoria não encontrada';
+//     }
+// }
+
+// var categoria_veiculo = '15';
+// console.log(valor_pedagio(categoria_veiculo));
+
+//Aula 29
+
+// var x = 0;
+
+// while (x < 10) {
+//     console.log(x);
+//     x++;
+
+//     if (x == 5) {
+//         break;
+//     }
+// }
+
+// var lista = [1, 5, 9, 33, 36, 56, 89, 100, 103, 150, 145];
+
+// for (var i = 0; i < lista.length; i++) {
+
+//     if (lista[i] == 33) {
+
+//         console.log("CU");
+//         break;
+//     }
+
+//     console.log('Tentativa: ' + i);
+// }
+
+var num = 0;
+
+while (num < 20) {
+
+    num++;
+
+    if (num % 2 == 0) {
+        continue;
     }
-}
 
-var categoria_veiculo = '15';
-console.log(valor_pedagio(categoria_veiculo));
+    console.log(num);
+}
