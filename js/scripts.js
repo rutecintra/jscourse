@@ -680,3 +680,22 @@
 
 //Aula 33
 
+// document.getElementById("exemplo").innerHTML = "Olá";
+// $("#elemento").html("Olá");
+
+var oculto = false;
+
+$("#esconder").click(function() {
+    if ( ! oculto) {
+
+        $(".exemplo").hide();
+        oculto = true;
+        $("#esconder").html("Mostrar");
+
+    } else {
+        
+        $(".exemplo").show();
+        oculto = false;
+        $("#esconder").html("Esconder");
+    } 
+});
