@@ -638,10 +638,41 @@
 
 //date
 
-document.getElementById("mostrar_data").onclick = function() {
+// document.getElementById("mostrar_data").onclick = function() {
 
-    var date_select = document.getElementById("data_evento").value;
-    var data_completa = new Date(date_select);
+//     var date_select = document.getElementById("data_evento").value;
+//     var data_completa = new Date(date_select);
 
-    document.getElementById("data_selecionada").innerHTML = data_completa;
+//     document.getElementById("data_selecionada").innerHTML = data_completa;
+// }
+
+//Aula 31
+
+// select box
+document.getElementById("escolaridade").onchange = function () {
+
+    var campo_select = document.getElementById("escolaridade");
+    var indice_selecionado = campo_select.options.selectedIndex;
+    var valor_selecionado = campo_select.options[indice_selecionado].innerHTML;
+    document.getElementById("escolaridade_selecionada").innerHTML = valor_selecionado;
+
+};
+
+// check box
+
+var check = document.getElementsByName("lanche");
+
+for (var a = 0;  a < check.length; a++) {
+
+    check[a].onchange = function () {
+
+        document.getElementById("check_selecionado").innerHTML = "";
+        
+        for (var b = 0;  b < check.length; b++) {
+            
+            if (check[b].checked) {
+                document.getElementById("check_selecionado").innerHTML += '<li>' + check[b].value + '</li>';
+            }
+        }
+    }  
 }
